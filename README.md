@@ -48,5 +48,6 @@
     - setup router
     - export router
   - import router in app js
+- test in thunder client
 
 [Back to Top](#custom_anchor_name)

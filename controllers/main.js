@@ -1,5 +1,6 @@
 const login = async (req, res) => {
   res.send('fake login, register, signup');
+  console.log(req.body);
 };
 
 const dashboard = async (req, res) => {
