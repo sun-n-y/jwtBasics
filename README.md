@@ -87,6 +87,9 @@
   - in realistic application there can be multiple restricted routes
   - better to have all the logic in a middleware
   - and add it to the routes that need it in the controllers
--
+- Custom error classes
+  - create separate error classes using the custom api error
+  - http status codes library, better way get codes, easier to understand this way
+  -
 
 [Back to Top](#custom_anchor_name)
