@@ -83,5 +83,10 @@
 - verify token options
   - try catch
   - jwt.verify(token, secret string)
+- authentication middleware
+  - in realistic application there can be multiple restricted routes
+  - better to have all the logic in a middleware
+  - and add it to the routes that need it in the controllers
+-
 
 [Back to Top](#custom_anchor_name)
