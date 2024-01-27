@@ -66,8 +66,22 @@
   - better than using some random string because, jwt has a security feature
   - we can be sure about the integrity about our data
   - if token matches the validation, ie the same token we sent to the client, we're good
-  -
 - http is stateless
   - means server does not know any previous requests sent by the same client, frontend will always need to provide the token, or else access will be denied
+- jsonwebtoken package
+  - issuing and decoding tokens
+  - sign method - signed token send back to frontend
+    - payload
+      - pass in an object and put in anything you want, not confidential info
+      - ex since we are creating a user, send back id & username, so we can use it later for authentication
+      - good idea to keep it small
+    - jwt secret
+    - options
+      - expires in 30
+- bearer token
+- check for it in authHeader
+- verify token options
+  - try catch
+  - jwt.verify(token, secret string)
 
 [Back to Top](#custom_anchor_name)
