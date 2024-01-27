@@ -60,5 +60,14 @@
   - mongoose requires validation, checks it for us, if value is not present error is returned, if we are connected to database
   - joi package, an entire additional layer of validation sitting in front of our requests
   - checking for those values in the controller
+- jwt overview
+  - now we have two types of routes, public and restricted
+  - a way to exchange data between two parties
+  - better than using some random string because, jwt has a security feature
+  - we can be sure about the integrity about our data
+  - if token matches the validation, ie the same token we sent to the client, we're good
+  -
+- http is stateless
+  - means server does not know any previous requests sent by the same client, frontend will always need to provide the token, or else access will be denied
 
 [Back to Top](#custom_anchor_name)
