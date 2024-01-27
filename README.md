@@ -49,5 +49,16 @@
     - export router
   - import router in app js
 - test in thunder client
+- big picture
+  - we have a post route called login, where we will check for username and password. located in req.body
+  - if both exist we create a new jwt
+    - if not, we send back error response
+  - we send that jwt back to the front-end, since frontend needs it in order to send another successful request (the get request)
+    - where we display the secret information
+  - on the the server we can set up the authentication, where only the requests with jwt can access the secret dashboard
+- checking for empty values 3 ways
+  - mongoose requires validation, checks it for us, if value is not present error is returned, if we are connected to database
+  - joi package, an entire additional layer of validation sitting in front of our requests
+  - checking for those values in the controller
 
 [Back to Top](#custom_anchor_name)

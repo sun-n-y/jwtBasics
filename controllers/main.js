@@ -1,6 +1,13 @@
+const CustomAPIError = require('../errors/custom-error');
+
 const login = async (req, res) => {
+  const { username, password } = req.body;
+  //check for empty values
+  if (!username || !password) {
+    throw new CustomAPIError('please provide username and password', 400);
+  }
   res.send('fake login, register, signup');
-  console.log(req.body);
+  console.log(username, password);
 };
 
 const dashboard = async (req, res) => {
